@@ -67,6 +67,7 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
     <Compile Include="Assets\Player\Script\AnimationPlayer.cs" />
     <Compile Include="Assets\Player\Script\Eject.cs" />
+    <Compile Include="Assets\Player\Script\Health.cs" />
     <Compile Include="Assets\Player\Script\tir.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
