@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4886d3e86eaa28746aa8c21b36e0bbd2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - healthBar: {instanceID: 0}
+  - nombreSante: {instanceID: 0}
+  - SoundDead: {fileID: 8300000, guid: b96145fb09b87c346ba17cbdd7f6b961, type: 3}
+  - SoundHit: {fileID: 8300000, guid: 7a264240dcb57e042b82836f5acb7186, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
