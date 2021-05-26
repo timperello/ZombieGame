@@ -64,20 +64,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\HealthBar.cs" />
-    <Compile Include="Assets\Joueur.cs" />
+    <Compile Include="Assets\Atmosphere\AllSkyFree\AllSkyFree_Menu.cs" />
+    <Compile Include="Assets\Atmosphere\Emission.cs" />
+    <Compile Include="Assets\Atmosphere\RDL\Security_Pack\Scripts\scr_camera.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Demo\DemoScript.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Demo\DemoScript2D.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\BaseRainScript.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainCollision.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainScript.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainScript2D.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
-    <Compile Include="Assets\Munitions.cs" />
-    <Compile Include="Assets\NombreSante.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <Compile Include="Assets\Player\Script\AnimationPlayer.cs" />
+    <Compile Include="Assets\Player\Script\Eject.cs" />
+    <Compile Include="Assets\Player\Script\Health.cs" />
+    <Compile Include="Assets\Player\Script\HealthBar.cs" />
+    <Compile Include="Assets\Player\Script\Joueur.cs" />
+    <Compile Include="Assets\Player\Script\Munitions.cs" />
+    <Compile Include="Assets\Player\Script\NombreSante.cs" />
+    <Compile Include="Assets\Player\Script\tir.cs" />
+    <Compile Include="Assets\Zombie\Script\Enemy.cs" />
+    <Compile Include="Assets\Zombie\Script\Wave.cs" />
+    <None Include="Assets\Atmosphere\AllSkyFree\AllSkyFree_Readme.txt" />
+    <None Include="Assets\Atmosphere\RainMaker\Readme.txt" />
+    <None Include="Assets\Atmosphere\_ApocalypticVehiclesPack\SpecGrayscaleGlassSF.shader" />
+    <None Include="Assets\Atmosphere\RainMaker\Prefab\RainShader.shader" />
+    <None Include="Assets\Atmosphere\_Bad_Raccoon\_3D Realistic Terrain Free\README FIRST.txt" />
+    <None Include="Assets\Atmosphere\_ApocalypticVehiclesPack\SpecGrayscaleSF.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
