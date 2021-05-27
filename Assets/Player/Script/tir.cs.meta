@@ -3,13 +3,7 @@ guid: 756fc1f6cb559bf43960a41a7cca09ee
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - BulletHolePrefab: {fileID: 3909527198640802750, guid: bd08122d230d6b04a94c645b86433f3f,
-      type: 3}
-  - SoundTir: {fileID: 8300000, guid: 5180a8d891d63bb4587cfafcdc03a899, type: 3}
-  - reloadsound: {fileID: 8300000, guid: 6459277260ce4224bb9e9117d3644017, type: 3}
-  - emptysound: {fileID: 8300000, guid: 8575226d4b5791840b164be088b36ccc, type: 3}
-  - modetir: {fileID: 8300000, guid: f10cd1ca0092fcf4d874ecf51ebdd1bb, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

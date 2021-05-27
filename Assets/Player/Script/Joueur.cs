@@ -19,10 +19,10 @@ public class Joueur : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("AddLife", 1, 1);
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         nombreSante.SetHealth(currentHealth);
+        InvokeRepeating("AddLife", 1, 1);
         GetComponent<Animator>().enabled = false;
 
     }
@@ -30,55 +30,15 @@ public class Joueur : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            if (currentHealth > 0)
-            {
-                TakeDamage(dmgZombie);
-            }
-            else
-                currentHealth = -1;
-        }
-        /*if (Input.GetKeyDown("m"))
-        {
-            if (currentHealth >= 0)
-            {
-                currentHealth += 10;
-            }
-        }*/
-
-        if (currentHealth >= 50)
-        {
-            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0f;
-        }
-        if (currentHealth < 50)
-        {
-            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.2f;
-        }
-        if (currentHealth < 40)
-        {
-            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.3f;
-        }
-        if (currentHealth < 30)
-        {
-            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.4f;
-        }
-        if (currentHealth < 20)
-        {
-            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.5f;
-        }
-        if (currentHealth < 10)
-        {
-            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.6f;
-        }
+        
     }
 
-    void TakeDamage(int damage)
+    void TakeDamage()
     {
-        if ((currentHealth - damage) < 0)
-            currentHealth = 0;
+        if ((currentHealth - dmgZombie) > 0)
+            currentHealth = currentHealth - dmgZombie;
         else
-            currentHealth = currentHealth - damage;
+            currentHealth = 0;
         GetComponent<AudioSource>().PlayOneShot(SoundHit);
         if (currentHealth <= 0)
         {
@@ -88,6 +48,7 @@ public class Joueur : MonoBehaviour
         }
         nombreSante.SetHealth(currentHealth);
         healthBar.SetHealth(currentHealth);
+        updateBlood();
     }
 
     public void PlayerDead()
@@ -113,13 +74,42 @@ public class Joueur : MonoBehaviour
     {
         if (currentHealth < maxHealth)
         {
-            currentHealth += 1;  //  RegenHealth est le nombre de santÃ© que tu veux ajouter toutes les secondes
+            currentHealth += 2;  //  RegenHealth est le nombre de santÃ© que tu veux ajouter toutes les secondes
             nombreSante.SetHealth(currentHealth);
             healthBar.SetHealth(currentHealth);
+            updateBlood();
         }
 
         if (currentHealth <= 0)
             currentHealth = -1;
 
+    }
+
+    void updateBlood()
+    {
+        if (currentHealth >= 50)
+        {
+            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0f;
+        }
+        if (currentHealth < 50)
+        {
+            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.2f;
+        }
+        if (currentHealth < 40)
+        {
+            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.3f;
+        }
+        if (currentHealth < 30)
+        {
+            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.4f;
+        }
+        if (currentHealth < 20)
+        {
+            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.5f;
+        }
+        if (currentHealth < 10)
+        {
+            GameObject.Find("Blood").GetComponent<CanvasGroup>().alpha = 0.6f;
+        }
     }
 }

@@ -35,10 +35,5 @@ public class AnimationPlayer : MonoBehaviour
             anim.SetBool("Walk", false);
             anim.SetBool("Run", false);
         }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            anim.SetTrigger("Reload");
-        }
     }
 }

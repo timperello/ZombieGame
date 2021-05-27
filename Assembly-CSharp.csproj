@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5E11D15B-F95F-8F0A-A7E3-6306BE9222B9}</ProjectGuid>
+    <ProjectGuid>{51F4583C-A6F4-1437-0AC2-0CD51D81446A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -72,21 +72,33 @@
     <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainScript2D.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\DemoScene\DemoTest.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_BloodSettings.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_DecaGizmo.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_DecalSettings.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_DrawToLayers.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_ManualAnimationUpdate.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_MouseOrbit.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_ShaderAnimation.cs" />
+    <Compile Include="Assets\Map\MiniMap\FixPosMiniMap.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
     <Compile Include="Assets\Player\Script\AnimationPlayer.cs" />
     <Compile Include="Assets\Player\Script\Eject.cs" />
     <Compile Include="Assets\Player\Script\HealthBar.cs" />
     <Compile Include="Assets\Player\Script\Joueur.cs" />
-    <Compile Include="Assets\Player\Script\Munitions.cs" />
+    <Compile Include="Assets\Player\Script\ModeTir.cs" />
     <Compile Include="Assets\Player\Script\NombreSante.cs" />
     <Compile Include="Assets\Player\Script\tir.cs" />
     <Compile Include="Assets\Zombie\Script\Enemy.cs" />
     <Compile Include="Assets\Zombie\Script\Wave.cs" />
     <None Include="Assets\Atmosphere\AllSkyFree\AllSkyFree_Readme.txt" />
     <None Include="Assets\Atmosphere\RainMaker\Readme.txt" />
+    <None Include="Assets\BloodFX\VolumetricBloodFX\Shaders\BFX_Blood.shader" />
     <None Include="Assets\Atmosphere\_ApocalypticVehiclesPack\SpecGrayscaleGlassSF.shader" />
     <None Include="Assets\Atmosphere\RainMaker\Prefab\RainShader.shader" />
+    <None Include="Assets\BloodFX\VolumetricBloodFX\Readme.txt" />
     <None Include="Assets\Atmosphere\_Bad_Raccoon\_3D Realistic Terrain Free\README FIRST.txt" />
+    <None Include="Assets\BloodFX\VolumetricBloodFX\Shaders\BFX_Decal.shader" />
     <None Include="Assets\Atmosphere\_ApocalypticVehiclesPack\SpecGrayscaleSF.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -626,36 +638,36 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/timo/Desktop/version d'elliot/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/timo/Desktop/ajout du sang/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FBC479B3-845A-26BE-C364-2E5B57E2140D}</Project>
+      <Project>{8EEC939F-7C55-4AE4-9581-5C61D5BC131B}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
