@@ -9,7 +9,6 @@ public class AnimationPlayer : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
@@ -37,7 +36,7 @@ public class AnimationPlayer : MonoBehaviour
             anim.SetBool("Run", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.R) /*&& GetComponentInChildren<tir>().Cartouches==0*/)
+        if (Input.GetKeyDown(KeyCode.R))
         {
             anim.SetTrigger("Reload");
         }

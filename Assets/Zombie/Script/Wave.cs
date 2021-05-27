@@ -5,38 +5,39 @@ using UnityEngine;
 public class Wave : MonoBehaviour
 {
     // Start is called before the first frame update
-    GameObject zombie;
+    public GameObject zombie;
     Vector3 posSpawn;
     int rand;
     private bool isCoroutineExecuting;
+    const int NbZombieParVague = 5;
+    int NumWave = 0;
+
     void Start()
-    {       
-        zombie = GameObject.Find("Enemy");       
+    {
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(ExecuteAfterTime(5));
-        
+        if (GameObject.FindGameObjectsWithTag("Zombie").Length == 0)
+        {
+            NumWave++;
+            StartCoroutine(NewWave(2));
+            print(GameObject.FindGameObjectsWithTag("Zombie").Length);
+        }
     }
     void SpawnZombie()
     {
         rand = Random.Range(1, 7);
         posSpawn = GameObject.Find("SpawnZombie" + rand).transform.position;
-        Instantiate(zombie,posSpawn, Quaternion.identity);        
+        Instantiate(zombie, posSpawn, Quaternion.identity);
     }
-    IEnumerator ExecuteAfterTime(float time)
+    IEnumerator NewWave(float time)
     {
-        if (isCoroutineExecuting)
-            yield break;
-
-        isCoroutineExecuting = true;
-
-        yield return new WaitForSeconds(time);
-
-        SpawnZombie();
-
-        isCoroutineExecuting = false;
+        for (int i = 0; i < (NumWave * NbZombieParVague); i++)
+        {
+            SpawnZombie();
+            yield return new WaitForSeconds(time);      
+        }
     }
 }

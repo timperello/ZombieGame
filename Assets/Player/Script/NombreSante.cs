@@ -10,6 +10,6 @@ public class NombreSante : MonoBehaviour
     
     public void SetHealth(int health)
     {
-        affichageNombreSante.text = ""+ health *25 + "";
+        affichageNombreSante.text = ""+ health +"";
     }
 }
