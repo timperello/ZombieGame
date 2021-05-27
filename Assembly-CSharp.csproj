@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D8E7BB05-4AE2-233A-ED78-37279FE36F80}</ProjectGuid>
+    <ProjectGuid>{A77DEB61-50BA-3D2B-BA85-CD07C2DB2C66}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,11 +64,63 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Atmosphere\AllSkyFree\AllSkyFree_Menu.cs" />
+    <Compile Include="Assets\Atmosphere\Blinking.cs" />
+    <Compile Include="Assets\Atmosphere\RDL\Security_Pack\Scripts\scr_camera.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Demo\DemoScript.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Demo\DemoScript2D.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\BaseRainScript.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainCollision.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainScript.cs" />
+    <Compile Include="Assets\Atmosphere\RainMaker\Prefab\RainScript2D.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\DemoScene\DemoTest.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_BloodSettings.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_DecaGizmo.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_DecalSettings.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_DrawToLayers.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_ManualAnimationUpdate.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_MouseOrbit.cs" />
+    <Compile Include="Assets\BloodFX\VolumetricBloodFX\Scripts\BFX_ShaderAnimation.cs" />
+    <Compile Include="Assets\BoiteMunitions\Add_Chargeur.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
+    <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Map\MiniMap\FixPosMiniMap.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
+    <Compile Include="Assets\ParticleLight\Scripts\UVScroller_C.cs" />
     <Compile Include="Assets\Player\Script\AnimationPlayer.cs" />
     <Compile Include="Assets\Player\Script\Eject.cs" />
-    <Compile Include="Assets\Player\Script\Health.cs" />
+    <Compile Include="Assets\Player\Script\HealthBar.cs" />
+    <Compile Include="Assets\Player\Script\Joueur.cs" />
+    <Compile Include="Assets\Player\Script\ModeTir.cs" />
+    <Compile Include="Assets\Player\Script\Munitions.cs" />
+    <Compile Include="Assets\Player\Script\NombreSante.cs" />
     <Compile Include="Assets\Player\Script\tir.cs" />
+    <Compile Include="Assets\Zombie\Script\Enemy.cs" />
+    <Compile Include="Assets\Zombie\Script\Wave.cs" />
+    <None Include="Assets\ParticleLight\Read Me\Read Me.txt" />
+    <None Include="Assets\ParticleLight\Shader\AdditiveMask.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
+    <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\Atmosphere\AllSkyFree\AllSkyFree_Readme.txt" />
+    <None Include="Assets\Atmosphere\RainMaker\Readme.txt" />
+    <None Include="Assets\BloodFX\VolumetricBloodFX\Shaders\BFX_Blood.shader" />
+    <None Include="Assets\Atmosphere\_ApocalypticVehiclesPack\SpecGrayscaleGlassSF.shader" />
+    <None Include="Assets\Atmosphere\RainMaker\Prefab\RainShader.shader" />
+    <None Include="Assets\BloodFX\VolumetricBloodFX\Readme.txt" />
+    <None Include="Assets\Atmosphere\_Bad_Raccoon\_3D Realistic Terrain Free\README FIRST.txt" />
+    <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
+    <None Include="Assets\BloodFX\VolumetricBloodFX\Shaders\BFX_Decal.shader" />
+    <None Include="Assets\Atmosphere\_ApocalypticVehiclesPack\SpecGrayscaleSF.shader" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -607,36 +659,36 @@
       <HintPath>D:/Unity/2019.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/DEmo2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/pacol/Desktop/IUT/Jeux Test Unity/Demo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4EA9D5FF-4A71-EEB6-645D-9381E138F347}</Project>
+      <Project>{7405B0C2-8C09-B5F9-1158-26143DD6F644}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
