@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1283f0db9c3e8a6448c3daef20145b83
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Map_v1: {instanceID: 0}
+  - pauseMenu: {instanceID: 0}
+  - player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  - fpsC: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
